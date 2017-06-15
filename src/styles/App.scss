@@ -3,6 +3,8 @@ html,body{
   background-color: #222;
   width:100%;
   height:100%;
+  margin:0;
+  padding:0;
 }
 .content{
   with:100%;
@@ -12,12 +14,10 @@ html,body{
 .stage{
   position:relative;
   width:100%;
-  height:680px;
-  background-color:#ccc;
-  margin:20px 0;
-  display:hidden;
-
-
+  height:100%;
+  overflow:hidden;
+  margin:0;
+  padding:0;
 }
 /*stage --- end*/
 
@@ -25,13 +25,17 @@ html,body{
 /*image --- start*/
 .img-sec{
     position:relative;
-   
+    overflow:hidden;
+    width:100%;
+    height:560px;
+    background-color:#ddd;
+    margin:20px 0;
 }
 .img-figure{
-    width:320px;
-    height:360px;
+    width:280px;
+    height:320px;
     margin:0;
-    padding:40px;
+    padding:20px;
     box-sizing:border-box;
     background-color:#fff;
     position:absolute;
@@ -41,8 +45,9 @@ figcaption{
 }
 .img-title{
     color:#a7a0a2;
-    margin:20px;
     font-size:16px;
+    margin:0;
+    padding:18px;
 }
 /*image --- end*/
 
