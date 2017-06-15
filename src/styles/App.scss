@@ -30,15 +30,21 @@ html,body{
     height:560px;
     background-color:#ddd;
     margin:20px 0;
+
 }
 .img-figure{
-    width:280px;
-    height:320px;
-    margin:0;
-    padding:20px;
-    box-sizing:border-box;
+  position:absolute;
+   width:280px;
+   height:320px;
+   margin:0;
+   padding:20px;
+   box-sizing:border-box;
     background-color:#fff;
-    position:absolute;
+    transform-style:preserve-3d;
+    cursor:pointer;
+}
+.is-inverse{
+  transform:rotateY(180deg);
 }
 figcaption{
     text-align:center;
@@ -48,6 +54,21 @@ figcaption{
     font-size:16px;
     margin:0;
     padding:18px;
+}
+.img-back{
+   position: absolute;
+   width:280px;
+   height:320px;
+   cursor:pointer;
+    padding: 117px 0;
+    overflow: auto;
+    color: #a7a0a2;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-sizing: border-box;
+    backface-visibility:hidden;
+    transform:rotateY(180deg);
 }
 /*image --- end*/
 
